@@ -9,7 +9,7 @@ public class TradutorDeepl {
 
 //     Construtor que recebe a chave da API
     public TradutorDeepl(String apiKey) {
-        this.client = new DeepLClient("fbd7a047-2b8f-4d49-aae2-9213e7b8e4dd:fx");
+        this.client = new DeepLClient(System.getenv("DEEP_APIKEY"));
     }
 
 //     Método para traduzir
